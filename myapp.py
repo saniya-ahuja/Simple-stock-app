@@ -14,7 +14,6 @@ tickerSymbol = 'GOOGL'
 tickerData = yf.Ticker(tickerSymbol)
 
 # Get historical prices
-# ❌ Removed 'period' (cannot be used with start & end)
 tickerDf = tickerData.history(
     start='2010-05-31',
     end='2020-05-31'
